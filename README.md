@@ -1,2 +1,2 @@
 # README
-  Some commonly used c++ files
+  Some commonly used c++ codes
