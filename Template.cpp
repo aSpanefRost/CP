@@ -6,6 +6,7 @@
 #include<cstring>
 #include<set>
 #include<algorithm>
+#include<queue>
 using namespace std;
  
 #define fo(i,n) for(int i=0;i<n;i++)
