@@ -1,2 +1,2 @@
 # README
-  Some commonly used c++ codes
+  Some commonly used c++ algos and their implementations!!
