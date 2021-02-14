@@ -62,8 +62,8 @@ int main()
                 	pq.push(make_pair(dist[edge.first],edge.first));
             	}
             }
-            edge.first =0;
-            edge.second =0;
+//             edge.first =0;
+//             edge.second =0;
             
         }
         visited[curr] = true;
