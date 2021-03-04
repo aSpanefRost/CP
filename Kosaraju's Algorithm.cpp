@@ -14,9 +14,9 @@ void dfs(int node)     //dfs to sort the nodes in increasing order of their "out
      vis[node]=1;
      for(auto x:ar[node])
      {
-        if(vis[node]==0)
+        if(vis[x]==0)
         {
-           dfs(node);
+           dfs(x);
         }
      }
      order.push_back(node);
