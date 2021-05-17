@@ -13,7 +13,7 @@ int findDuplicate(vector<int>& nums)
         do
         {
             slow=nums[slow];
-            fast=nums[nums[fast]];
+            fast=nums[nums[fast]];  //fast is twice faster than slow
         }
         while(slow!=fast);
         
