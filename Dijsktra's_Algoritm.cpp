@@ -75,3 +75,42 @@ int main()
     
     return 0;
 }
+
+
+
+//Another Example : Leetcode 1514
+//  double maxProbability(int n, vector<vector<int>>& edges, vector<double>& succProb, int start, int end) {
+//         vector<pair<int,double> > ar[n];
+//         for(int i=0;i<edges.size();i++)
+//         {
+//             ar[edges[i][0]].push_back({edges[i][1],succProb[i]});
+//             ar[edges[i][1]].push_back({edges[i][0],succProb[i]});
+//         }
+//         priority_queue<pair<double,int>> pq;
+//         vector<double> prob(n,0);
+//         prob[start]=1;
+//         pq.push({1,start});
+//         vector<bool> visited(n,false);
+//         while(!pq.empty())
+//         {
+//             auto curr=pq.top();
+//             //cout<<curr.second<<endl;
+//             pq.pop();
+//             visited[curr.second]=true;
+//             for(auto x:ar[curr.second])
+//             {
+//                 if(!visited[x.first])
+//                 {
+//                     if(curr.first*x.second>prob[x.first])
+//                     {
+//                        // cout<<curr.second<<" "<<x.first<<" "<<curr.first<<" "<<x.second<<" "<<prob[x.first]<<endl;
+//                         prob[x.first]=(curr.first)*(x.second);
+//                         pq.push({prob[x.first],x.first});
+//                     }
+                   
+//                 }
+//             }
+//         }
+//         for(int i=0;i<n;i++) cout<<prob[i]<<" ";
+//         return prob[end];
+//     }
